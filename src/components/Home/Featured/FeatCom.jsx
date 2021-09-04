@@ -1,22 +1,36 @@
 import { Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
+import propTypes from 'prop-types';
 
-const FeatCom = () => {
+const FeatCom = (props) => {
   return (
     <>
-      <Col md={3} className={`${style.product} border-right`}>
-        Bulgari
-        <p>Black Fashion Zapda</p>
-        <img
-          className="img-fluid"
-          src={process.env.PUBLIC_URL + `./img/featured/products/${props.img}`}
-          alt=""
-        />
-        <h5>$11.00</h5>
-        <strike>$19.00</strike>
+      <Col md={3} className={`${style.product} my-3`}>
+        {props.text}
+        <div className={style.borLeft}>
+          <p>{props.para}</p>
+
+          <img
+            className="img-fluid"
+            src={
+              process.env.PUBLIC_URL + `./img/featured/products/${props.img}`
+            }
+            alt=""
+          />
+        </div>
+        <h5>${props.prize}</h5>
+        <strike>${props.withoutDis}</strike>
       </Col>
     </>
   );
+};
+
+FeatCom.propTypes = {
+  text: propTypes.string,
+  para: propTypes.string,
+  img: propTypes.string,
+  prize: propTypes.number,
+  withoutDis: propTypes.number,
 };
 
 export default FeatCom;
