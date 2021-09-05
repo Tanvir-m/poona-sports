@@ -4,3 +4,7 @@ $red: #ff0000;
 $gray: #878787;
 
 @import '_home.scss';
+
+.active {
+  color: $yellow;
+}

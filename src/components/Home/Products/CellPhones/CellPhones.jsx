@@ -3,7 +3,7 @@ import ProdCom from '../Comp/ProdCom';
 import style from '../../../css/style.module.scss';
 import CenCom from '../Comp/CenCom';
 
-const BestDeal = () => {
+const CellPhones = () => {
   return (
     <>
       <Col md={4}>
@@ -38,7 +38,7 @@ const BestDeal = () => {
         </Row>
       </Col>
       <Col md={4} className={`${style.bestDealMid} my-4`}>
-        <CenCom prize={450} withoutDis={499} imgPath="best-deal" />
+        <CenCom prize={310} withoutDis={320} imgPath="cell-phones" />
       </Col>
       <Col md={4}>
         <Row>
@@ -75,4 +75,4 @@ const BestDeal = () => {
   );
 };
 
-export default BestDeal;
+export default CellPhones;

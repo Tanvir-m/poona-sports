@@ -1,7 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import SupImg from './SupImg';
 import { useState } from 'react';
-// import { FaOpencart } from 'react-icons';
+import { FaOpencart } from 'react-icons/fa';
 
 const CenCom = (props) => {
   const [img, setImg] = useState('1');
@@ -14,23 +14,26 @@ const CenCom = (props) => {
         className="img-fluid"
         src={
           process.env.PUBLIC_URL +
-          `./img/featured/products/best-deal/${img}.jpg`
+          `./img/featured/products/${props.imgPath}/${img}.jpg`
         }
         alt=""
       />
       <Row className="my-4">
-        <SupImg click={() => setImg('1')} img="best-deal/1.jpg" />
-        <SupImg click={() => setImg('2')} img="best-deal/2.jpg" />
-        <SupImg click={() => setImg('3')} img="best-deal/3.jpg" />
-        <SupImg click={() => setImg('4')} img="best-deal/4.jpg" />
+        <SupImg click={() => setImg('1')} img={`${props.imgPath}/1.jpg`} />
+        <SupImg click={() => setImg('2')} img={`${props.imgPath}/2.jpg`} />
+        <SupImg click={() => setImg('3')} img={`${props.imgPath}/3.jpg`} />
+        <SupImg click={() => setImg('4')} img={`${props.imgPath}/4.jpg`} />
       </Row>
       <Row className="my-3">
         <Col md={7}>
-          <h4>$450.00</h4>
-          <strike>$499.00</strike>
+          <h4>${props.prize}</h4>
+          <strike>${props.withoutDis}</strike>
         </Col>
         <Col md={5}>
-          <button>Add To Cart</button>
+          <button>
+            {/* <FaOpencart /> */}
+            Add To Cart
+          </button>
         </Col>
       </Row>
     </>
