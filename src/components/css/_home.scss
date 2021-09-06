@@ -133,3 +133,57 @@
     color: white;
   }
 }
+
+// Best seller
+
+.bestSellers {
+  margin-top: 100px;
+  h2 {
+    display: inline-flex;
+  }
+  ul {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    float: right;
+    li {
+      display: inline;
+      margin-left: 20px;
+      margin-top: 40px !important;
+      padding: 4px 20px;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid $yellow;
+        padding: 4px 20px;
+        border-radius: 15px;
+      }
+    }
+    .activeLi {
+      border: 2px solid $yellow;
+      padding: 4px 20px;
+      border-radius: 15px;
+    }
+    hr {
+      margin: 0px;
+    }
+  }
+}
+
+// destCellCom
+.bestSellCom {
+  p {
+    color: $blue;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  h5 {
+    color: red;
+    display: inline-block;
+  }
+  strike {
+    color: $gray;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
