@@ -9,7 +9,7 @@ import BestSellers from '../components/Home/BestSellers/BestSellers';
 const Home = () => {
   return (
     <Container fluid>
-      <Slider />
+      {/* <Slider /> */}
       <Offers />
       <Featured />
       <Products />

@@ -1,15 +1,18 @@
 import { Col } from 'react-bootstrap';
 import propTypes from 'prop-types';
+import style from '../../css/style.module.scss';
 
 const OffersCom = (props) => {
   return (
     <>
       <Col md={3}>
-        <img
-          className="img-fluid"
-          src={process.env.PUBLIC_URL + `./img/offers/${props.img}`}
-          alt=""
-        />
+        <div className={style.offCom}>
+          <img
+            className="img-fluid"
+            src={process.env.PUBLIC_URL + `./img/offers/${props.img}`}
+            alt=""
+          />
+        </div>
       </Col>
     </>
   );
