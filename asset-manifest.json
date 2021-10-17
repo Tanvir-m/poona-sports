@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/poona-sports/static/css/main.c3aca3de.chunk.css",
-    "main.js": "/poona-sports/static/js/main.267e05ca.chunk.js",
-    "main.js.map": "/poona-sports/static/js/main.267e05ca.chunk.js.map",
+    "main.css": "/poona-sports/static/css/main.a969c223.chunk.css",
+    "main.js": "/poona-sports/static/js/main.dc52a3a0.chunk.js",
+    "main.js.map": "/poona-sports/static/js/main.dc52a3a0.chunk.js.map",
     "runtime-main.js": "/poona-sports/static/js/runtime-main.7af2afbd.js",
     "runtime-main.js.map": "/poona-sports/static/js/runtime-main.7af2afbd.js.map",
     "static/css/2.818011ed.chunk.css": "/poona-sports/static/css/2.818011ed.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.e0a46642.chunk.js.map": "/poona-sports/static/js/2.e0a46642.chunk.js.map",
     "index.html": "/poona-sports/index.html",
     "static/css/2.818011ed.chunk.css.map": "/poona-sports/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.c3aca3de.chunk.css.map": "/poona-sports/static/css/main.c3aca3de.chunk.css.map",
+    "static/css/main.a969c223.chunk.css.map": "/poona-sports/static/css/main.a969c223.chunk.css.map",
     "static/js/2.e0a46642.chunk.js.LICENSE.txt": "/poona-sports/static/js/2.e0a46642.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7af2afbd.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.e0a46642.chunk.js",
-    "static/css/main.c3aca3de.chunk.css",
-    "static/js/main.267e05ca.chunk.js"
+    "static/css/main.a969c223.chunk.css",
+    "static/js/main.dc52a3a0.chunk.js"
   ]
 }
