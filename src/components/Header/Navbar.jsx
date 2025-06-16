@@ -1,14 +1,15 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import style from '../css/style.module.scss';
-import { IoMdCall, IoIosShuffle } from 'react-icons/io';
-import { HiMail, HiShoppingCart } from 'react-icons/hi';
-import { MdLocationOn } from 'react-icons/md';
-import { GiTruck } from 'react-icons/gi';
-import { AiOutlineUserAdd } from 'react-icons/ai';
-import { FiHeart } from 'react-icons/fi';
-import { BiSearchAlt } from 'react-icons/bi';
+import { Container, Row, Col } from "react-bootstrap";
+import style from "../css/style.module.scss";
+import { IoMdCall, IoIosShuffle } from "react-icons/io";
+import { HiMail, HiShoppingCart } from "react-icons/hi";
+import { MdLocationOn } from "react-icons/md";
+import { GiTruck } from "react-icons/gi";
+import { AiOutlineUserAdd } from "react-icons/ai";
+import { FiHeart } from "react-icons/fi";
+import { BiSearchAlt } from "react-icons/bi";
 
 const Navbar = () => {
+  // ui change
   return (
     <>
       <Container fluid>
@@ -54,7 +55,7 @@ const Navbar = () => {
             </Col>
             <Col md={7} className={style.bg}>
               <Row>
-                <Col sm={11} style={{ padding: '0px' }}>
+                <Col sm={11} style={{ padding: "0px" }}>
                   <input
                     type="text"
                     className={`form-control ${style.searchBar}`}
@@ -70,19 +71,19 @@ const Navbar = () => {
               <Row>
                 <Col md={4}>
                   <div>
-                    <IoIosShuffle className={style.cart} />{' '}
+                    <IoIosShuffle className={style.cart} />{" "}
                     <div className={style.count}>0</div>
                   </div>
                 </Col>
                 <Col md={4}>
                   <div>
-                    <FiHeart className={style.cart} />{' '}
+                    <FiHeart className={style.cart} />{" "}
                     <div className={style.count}>0</div>
                   </div>
                 </Col>
                 <Col md={4}>
                   <div>
-                    <HiShoppingCart className={style.cart} />{' '}
+                    <HiShoppingCart className={style.cart} />{" "}
                     <div className={style.count}>0</div>
                   </div>
                 </Col>
